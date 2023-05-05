@@ -80,8 +80,8 @@ const schema = yup.object().shape({
   password: yup.string().min(5).required()
 })
 const defaultValues = {
-  password: 'r3daxc6l',
-  id: 'devkkali@gmail.com'
+  password: '',
+  id: ''
 }
 
 const LoginV1 = () => {
@@ -338,7 +338,7 @@ const LoginV1 = () => {
                     onBlur={onBlur}
                     onChange={onChange}
                     error={Boolean(errors.id)}
-                    placeholder='jaynikpatel119977.jp@gmail.com'
+                    placeholder='Enter Your Email Id'
                   />
                 )}
               />
